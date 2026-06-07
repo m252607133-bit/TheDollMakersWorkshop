@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dollmaker's Workshop</title>
+
+        <link rel="icon"
+              type="image/png"
+              href="assetsicon.png"
+
+        <link rel="stylesheet" href="style.css"
+    </head>
+    
+<body>
+
+    <h1>🌟🧸Dollmaker's Workshop🎁🎀</h1>
+
+    
+    
+    
+    
+        <div id="container">
+
+    <div id="characterArea">
+     <details open>
+        <summary>Character</summary>
+        <h2>Nama Karakter</h2>
+        <input
+       type="text"
+       id="characterName"
+       placeholder="Masukkan nama karakter..."
+       oninput="updateCharactername()">
+       </details>
+    
+    
+        <div id="character">
+
+    
+    <!--BODY-->
+        <img
+       id="body"
+       class="layer"
+       src="assets/Body-20260601T061014Z-3-001/Body/body_light.png">
+    
+
+   
+  <!--EYES-->
+       <img
+       id="eyes"
+       class="layer"
+       src="assets/Eyes-20260601T061135Z-3-001/Eyes/eyes_yellow.png"
+   
+
+      
+<!--DRESS-->
+       <img
+         id="dress"
+         class="layer"
+         src="assets\Dress-20260602T134208Z-3-001\Dress\Dress1\dress1_pink.png">
+        
+
+     
+<!--SOCKS-->
+       <img
+         id="socks"
+         class="layer"
+         src="assets\Socks-20260601T061345Z-3-001\Socks\Socks1\socks1_blue.png">    
+        
+
+    
+<!--SHOES-->
+       <img
+       id="shoes"
+       class="layer"
+       src="assets\Shoes-20260601T061323Z-3-001\Shoes\Shoes1\shoes1_blue.png">
+   
+
+    
+<!--PANTS-->
+       <img
+       id="pants"
+       class="layer"
+       src="assets/Pants-20260601T061231Z-3-001/Pants/Pants2/pants2_green.png">
+   
+<!--SHIRT-->
+        <img
+        id="shirt"
+        class="layer"
+        src="assets/Shirt-20260601T061305Z-3-001/Shirt/Shirt1/shirt1_blue.png">
+    
+  <!--HAIR-->
+       <img
+       id="hair"
+       class="layer"
+       src="assets/Hair-20260601T061212Z-3-001/Hair/Hair1/hair1_orange.png">
+   
+     </div>
+
+</div>  
+
+<div id="menuArea">
+
+<!--TOMBOL-->
+
+<details>
+    <summary>Body</summary>
+
+<h3>Warna Kulit</h3>
+<button onclick="prevBodyColor()">«</button>
+
+
+<span id="bodyColorText">
+    brown
+</span>
+
+<button onclick="nextBodyColor()">»</button>
+</details>
+
+<details>
+    <summary>Eyes</summary>
+<h3>Warna Mata</h3>
+<button onclick="prevEyeColor()">«</button>
+
+<span id="eyeColorText">
+    blue
+</span>
+
+<button onclick="nextEyeColor()">»</button>
+</details>
+
+<details>
+    <summary>Hair</summary>
+<h3> Model Rambut </h3>
+<button onclick="prevHair()">«</button>
+
+<span id="hairModelText">
+Hair 1
+</span>
+
+<button onclick="nextHair()">»</button>
+
+<h3>Warna Rambut</h3>
+
+<button onclick="prevHairColor()">«</button>
+
+<span id="hairColorText">
+blue
+</span>
+
+<button onclick="nextHairColor()">»</button>
+</details>
+
+<details>
+    <summary>Clothing Type</summary>
+<h3>Tipe Baju</h3>
+
+<button onclick="prevClothingMode()">«</button>
+
+<span id="clothingModeText">
+Dress
+</span>
+
+<button onclick="nextClothingMode()">»</button>
+</details>
+
+<details>
+    <summary>Dress (Open this if u choose Dress!)</summary>
+<h3>Model Dress</h3>
+<button onclick="prevDress()">«</button>
+
+<span id="dressModelText">
+Dress 1
+</span>
+
+<button onclick="nextDress()">»</button>
+<br><br>
+
+<h3>Warna Dress</h3>
+<button onclick="prevDressColor()">«</button>
+
+<span id="dressColorText">
+blue
+</span>
+
+<button onclick="nextDressColor()">»</button>
+</details>
+
+<details>
+    <summary>Shirt & Pants (Open this if u choose Shirt & Pants!)</summary>
+<h3>Model Baju</h3>
+<button onclick="prevShirt()">«</button>
+
+<span id="shirtModelText">
+Shirt 1
+</span>
+
+<button onclick="nextShirt()">»</button>
+
+<h3>Warna Baju</h3>
+<button onclick="prevShirtColor()">«</button>
+
+<span id="shirtColorText">
+blue
+</span>
+
+<button onclick="nextShirtColor()">»</button>
+
+<h3>Model Celana</h3>
+<button onclick="prevPants()">«</button>
+
+<span id="pantsModelText">
+Pants 1
+</span>
+
+<button onclick="nextPants()">»</button>
+
+<h3>Warna Celana</h3>
+<button onclick="prevPantsColor()">«</button>
+
+<span id="pantsColorText">
+blue
+</span>
+
+<button onclick="nextPantsColor()">»</button>
+</details>
+
+<details>
+    <summary>Socks</summary>
+<h3>Model Kaos Kaki</h3> 
+<button onclick="prevSocks()">«</button> 
+
+<span id="socksModelText"> 
+    Socks 1 
+</span>
+
+<button onclick="nextSocks()">»</button> 
+
+<h3>Warna Kaos Kaki</h3>
+ <button onclick="prevSocksColor()">«</button>
+ 
+ <span id="socksColorText">
+     blue 
+    </span>
+    
+    <button onclick="nextSocksColor()">»</button>
+</details>
+
+
+<details>
+    <summary>Shoes</summary>
+<h3>Model Sepatu</h3>
+<button onclick="prevShoes()">«</button>
+
+<span id="shoesModelText">
+Shoes 1
+</span>
+
+<button onclick="nextShoes()">»</button>
+
+<h3>Warna Sepatu</h3>
+<button onclick="prevShoesColor()">«</button>
+
+<span id="shoesColorText">
+blue
+</span>
+
+<button onclick="nextShoesColor()">»</button>
+</details>
+
+
+    </div>
+</div>
+
+<button onclick="saveCharacter()">
+    💾Save Character
+</button>
+
+
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
