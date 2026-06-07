@@ -9,14 +9,7 @@ h1{
  }
 
 body{
-    text-align:center;
-    font-family:Arial;
-    background-image: url("assets/Socks-20260601T061345Z-3-001/bg3.jpg");
-    background-size: cover;
-    background-postition:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
+  text-align:center; font-family:Arial; background-image: url("assets/Socks-20260601T061345Z-3-001/bg3.jpg"); background-size: cover; background-postition:center; background-repeat:no-repeat; background-attachment:fixed; }
 
 #character{
     position:relative;
